@@ -1,0 +1,169 @@
+/*femboy*/
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #ffb3d9;
+    color: #ffffff;
+}
+
+#workspaces {
+    margin: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#workspaces button:hover {
+    background-color: #2a2a2a;
+}
+
+#workspaces button.active {
+    background-color: #ffb3d9;
+    color: #1a1a1a;
+}
+
+#workspaces button.urgent {
+    background-color: #ff6b9d;
+    color: #ffffff;
+}
+
+#window {
+    margin: 0 10px;
+    color: #c9c9c9;
+}
+
+#clock {
+    padding: 0 15px;
+    color: #ffb3d9;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#network,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#pulseaudio,
+#pulseaudio.microphone,
+#custom-bluetooth,
+#custom-clipboard,
+#custom-power {
+    padding: 0 10px;
+    margin: 2px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+}
+
+#network {
+    color: #b3d9ff;
+}
+
+#network.disconnected {
+    color: #ff6b9d;
+}
+
+#cpu {
+    color: #ffb3d9;
+}
+
+#memory {
+    color: #b3d9ff;
+}
+
+#temperature {
+    color: #d9b3ff;
+}
+
+#temperature.critical {
+    color: #ff6b9d;
+    animation: blink 1s linear infinite;
+}
+
+#battery {
+    color: #b3ffb3;
+}
+
+#battery.charging {
+    color: #b3ffb3;
+}
+
+#battery.plugged {
+    color: #b3ffb3;
+}
+
+#battery.warning:not(.charging) {
+    color: #ffd9b3;
+}
+
+#battery.critical:not(.charging) {
+    color: #ff6b9d;
+    animation: blink 1s linear infinite;
+}
+
+#pulseaudio {
+    color: #ffb3d9;
+}
+
+#pulseaudio.muted {
+    color: #666666;
+}
+
+#pulseaudio.microphone {
+    color: #b3d9ff;
+}
+
+#pulseaudio.source-muted {
+    color: #666666;
+}
+
+#custom-bluetooth {
+    color: #b3d9ff;
+}
+
+#custom-clipboard {
+    color: #d9b3ff;
+}
+
+#custom-power {
+    color: #ff6b9d;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+#custom-power:hover {
+    background-color: #ff6b9d;
+    color: #1a1a1a;
+}
+
+#tray {
+    padding: 0 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #ff6b9d;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,65 @@
+/*cyberpunk*/
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+}
+
+window {
+    background-color: rgba(10, 10, 26, 0.95);
+    border: 3px solid #ff006e;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(255, 0, 110, 0.6),
+                inset 0 0 30px rgba(0, 240, 255, 0.1);
+}
+
+#input {
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(10, 10, 26, 0.8));
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 8px;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+#input:focus {
+    border-color: #ff006e;
+    box-shadow: 0 0 15px rgba(255, 0, 110, 0.5);
+}
+
+#inner-box {
+    background-color: transparent;
+    margin: 5px;
+}
+
+#outer-box {
+    background-color: transparent;
+    margin: 5px;
+}
+
+#scroll {
+    margin: 5px;
+}
+
+#text {
+    color: #e0e0ff;
+    padding: 4px;
+}
+
+#entry:selected {
+    background: linear-gradient(90deg, rgba(255, 0, 110, 0.4), rgba(217, 70, 255, 0.4));
+    border-radius: 8px;
+    border-left: 4px solid #ff006e;
+    box-shadow: 0 0 12px rgba(255, 0, 110, 0.4);
+}
+
+#entry:hover {
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.15), rgba(217, 70, 255, 0.15));
+    border-radius: 8px;
+    border-left: 2px solid #00f0ff;
+}
+
+#entry {
+    transition: all 0.2s ease;
+}

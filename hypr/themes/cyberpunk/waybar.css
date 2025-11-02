@@ -1,0 +1,166 @@
+/*cyberpunk*/
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 30px;
+}
+
+window#waybar {
+    background-color: #0a0a1a;
+    border-bottom: 3px solid #ff006e;
+    box-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+    color: #ffffff;
+}
+
+#workspaces {
+    margin: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #e0e0ff;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+#workspaces button:hover {
+    background-color: #1a1a2e;
+}
+
+#workspaces button.active {
+    background-color: #ff006e;
+    color: #0a0a1a;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background-color: #ff006e;
+    color: #ffffff;
+}
+
+#window {
+    margin: 0 10px;
+    color: #00f0ff;
+}
+
+#clock {
+    padding: 0 15px;
+    /*background-color: #ff006e;*/
+    color: #00f0ff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    margin: 2px 5px;
+}
+
+#network,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#pulseaudio,
+#pulseaudio.microphone,
+#custom-bluetooth,
+#custom-clipboard,
+#custom-power {
+    padding: 0 10px;
+    margin: 2px;
+    background-color: #1a1a2e;
+    border-radius: 6px;
+}
+
+#network {
+    color: #00f0ff;
+}
+
+#network.disconnected {
+    color: #ff006e;
+}
+
+#cpu {
+    color: #ff006e;
+}
+
+#memory {
+    color: #00f0ff;
+}
+
+#temperature {
+    color: #d946ff;
+}
+
+#temperature.critical {
+    color: #ff006e;
+}
+
+#battery {
+    color: #39ff14;
+}
+
+#battery.charging {
+    color: #39ff14;
+}
+
+#battery.plugged {
+    color: #39ff14;
+}
+
+#battery.warning:not(.charging) {
+    color: #ffee00;
+}
+
+#battery.critical:not(.charging) {
+    color: #ff006e;
+}
+
+#pulseaudio {
+    color: #ff006e;
+}
+
+#pulseaudio.muted {
+    color: #4a4a5e;
+}
+
+#pulseaudio.microphone {
+    color: #00f0ff;
+}
+
+#pulseaudio.source-muted {
+    color: #4a4a5e;
+}
+
+#custom-bluetooth {
+    color: #00f0ff;
+}
+
+#custom-clipboard {
+    color: #d946ff;
+}
+
+#custom-power {
+    color: #ff006e;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+#custom-power:hover {
+    background-color: #ff006e;
+    color: #0a0a1a;
+}
+
+#tray {
+    padding: 0 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #ff006e;
+}

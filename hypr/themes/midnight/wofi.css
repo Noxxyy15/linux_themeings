@@ -1,0 +1,55 @@
+/*midnight zone*/
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+}
+
+window {
+    background-color: #000000;
+    border: 2px solid #88aaff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(136,170,255,0.3);
+}
+
+#input {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border: 2px solid #88aaff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 8px;
+    box-shadow: 0 0 10px rgba(136,170,255,0.2);
+}
+
+#inner-box {
+    background-color: transparent;
+    margin: 5px;
+}
+
+#outer-box {
+    background-color: transparent;
+    margin: 5px;
+}
+
+#scroll {
+    margin: 5px;
+}
+
+#text {
+    color: #ffffff;
+    padding: 4px;
+}
+
+#entry:selected {
+    background-color: rgba(136,170,255,0.2);
+    border-radius: 8px;
+    border-left: 3px solid #88aaff;
+    box-shadow: 0 0 8px rgba(136,170,255,0.3);
+}
+
+#entry:hover {
+    background-color: rgba(136,170,255,0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(136,170,255,0.2);
+}
