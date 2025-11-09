@@ -1,0 +1,165 @@
+/* Pokémon Legendary Theme */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 30px;
+}
+
+window#waybar {
+    background-color: #1a1f35;
+    border-bottom: 3px solid #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+    color: #ffffff;
+}
+
+#workspaces {
+    margin: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #e8eaf6;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+#workspaces button:hover {
+    background-color: #2d3748;
+}
+
+#workspaces button.active {
+    background-color: #4a90e2;
+    color: #1a1f35;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+#window {
+    margin: 0 10px;
+    color: #f4c430;
+}
+
+#clock {
+    padding: 0 15px;
+    color: #f4c430;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    margin: 2px 5px;
+}
+
+#network,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#pulseaudio,
+#pulseaudio.microphone,
+#custom-bluetooth,
+#custom-clipboard,
+#custom-power {
+    padding: 0 10px;
+    margin: 2px;
+    background-color: #2d3748;
+    border-radius: 6px;
+}
+
+#network {
+    color: #22d3ee;
+}
+
+#network.disconnected {
+    color: #e74c3c;
+}
+
+#cpu {
+    color: #e74c3c;
+}
+
+#memory {
+    color: #4a90e2;
+}
+
+#temperature {
+    color: #8b5cf6;
+}
+
+#temperature.critical {
+    color: #e74c3c;
+}
+
+#battery {
+    color: #2ecc71;
+}
+
+#battery.charging {
+    color: #2ecc71;
+}
+
+#battery.plugged {
+    color: #2ecc71;
+}
+
+#battery.warning:not(.charging) {
+    color: #f4c430;
+}
+
+#battery.critical:not(.charging) {
+    color: #e74c3c;
+}
+
+#pulseaudio {
+    color: #8b5cf6;
+}
+
+#pulseaudio.muted {
+    color: #4a5568;
+}
+
+#pulseaudio.microphone {
+    color: #22d3ee;
+}
+
+#pulseaudio.source-muted {
+    color: #4a5568;
+}
+
+#custom-bluetooth {
+    color: #4a90e2;
+}
+
+#custom-clipboard {
+    color: #8b5cf6;
+}
+
+#custom-power {
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+#custom-power:hover {
+    background-color: #e74c3c;
+    color: #1a1f35;
+}
+
+#tray {
+    padding: 0 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f4c430;
+}

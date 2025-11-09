@@ -1,0 +1,136 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #000000;
+    border-bottom: 2px solid #88aaff;
+    color: #ffffff;
+}
+
+/* Workspaces */
+#workspaces {
+    margin: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#workspaces button:hover {
+    background-color: #1a1a1a;
+}
+
+#workspaces button.active {
+    background-color: #88aaff;
+    color: #000000;
+}
+
+#workspaces button.urgent {
+    background-color: #ff5555;
+    color: #ffffff;
+}
+
+/* Window title */
+#window {
+    margin: 0 10px;
+    color: #aaaaaa;
+}
+
+/* Clock */
+#clock {
+    padding: 0 15px;
+    color: #88aaff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* All modules on the right */
+#network,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#pulseaudio.microphone,
+#custom-power {
+    padding: 0 10px;
+    margin: 2px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+}
+
+/* Network */
+#network {
+    color: #88aaff;
+}
+
+#network.disconnected {
+    color: #ff5555;
+}
+
+/* CPU */
+#cpu {
+    color: #88aaff;
+}
+
+/* Memory */
+#memory {
+    color: #88aaff;
+}
+
+/* Temperature */
+#temperature {
+    color: #88aaff;
+}
+
+#temperature.critical {
+    color: #ff5555;
+    animation: blink 1s linear infinite;
+}
+
+/* Audio */
+#pulseaudio {
+    color: #88aaff;
+}
+
+#pulseaudio.muted {
+    color: #666666;
+}
+
+/* Microphone */
+#pulseaudio.microphone {
+    color: #88aaff;
+}
+
+#pulseaudio.source-muted {
+    color: #666666;
+}
+
+/* Power button */
+#custom-power {
+    color: #ff5555;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+#custom-power:hover {
+    background-color: #ff5555;
+    color: #000000;
+}
+
+/* Blink animation for critical states */
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
